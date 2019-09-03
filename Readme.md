@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Денис Афанасьев](https://up.htmlacademy.ru/htmlcss/26/user/1051133).
-* Наставник: `Артём Ильченко`.
+* Наставник:[Артём Ильченко](https://htmlacademy.ru/profile/id375383). <a href="https://github.com/tema1411"><img src="img/git.jpg" width="30" height="30" alt="Git"></a>
 
 ---
 
