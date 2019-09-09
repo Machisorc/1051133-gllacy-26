@@ -2,3 +2,9 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #9BAFA4;
 }
+address {
+  font-style: normal;
+}
+article {
+  padding: 10px 0 0 0;
+}
