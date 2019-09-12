@@ -1,10 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="20" viewBox="0 0 24 20">
-  <defs>
-    <style>
-      .cls-1 {
-        opacity: 0.8;
-      }
-    </style>
-  </defs>
-  <image id="checkbox-on" class="cls-1" width="24" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAUCAYAAACXtf2DAAABgElEQVQ4ja2VPUsDQRCGn8QEBfMD0llZiBBE7AQtbYWUFgFrBQsRP0BBFFQQFb+6YK8opEltShW0EGtLK1HQQgmOjMzJuuRyuZwvHNzO3j7vzu7ObUpE8sAqMEgyPQCTQN2lZIA1YAB4BJ7btPgENoEvYBGoAPc/PSJyIyIVEdFsSPBkRWTdeJciUlBW2mbwpl4JFihrGYxZuxs4BvLpiIFx4CNefA94yiSEdxl82ItvAGf6EpZBChhtAb7rwcWFhxkofB7YBqYj4ENOTE/QsgtvZKDtJaBo7RKwYKaBcsBBA/gKUAU6mxloiu9erGgZpQx+aHUTqG4zr9pGT7iD/U1Wgx0bVPJMOoBeoN+DzwE1oABsAeVmBoH2nSUKNO5948JVPY14zepATY5C+j6AWQceqqg6KNsGTnnwGeA6Ch6VQaATOzWx4bSQgWvyan/c21bhcQxUF3HAgYIlynnF1I6UodK74U8Gd1Y4pwkuHJ1on71fuR3/eWW+2LE+/40A3/Fbl3OIYmBNAAAAAElFTkSuQmCC"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
+	 height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
+<g id="Layer_1">
+</g>
+<g id="Layer_2">
+	<g>
+		<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
+		<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+			H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
+	</g>
+</g>
 </svg>
