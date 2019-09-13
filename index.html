@@ -39,11 +39,37 @@
       <a href="about.html">О Компании</a>
      </li>
     </ul>
-    <div>
-      <a href="#">Поиск</a>
-      <a href="#">Вход</a>
-      <a href="#">Пусто</a>
-    </div>
+    <ul>
+      <li>
+        <a href="#"><span class="visually-hidden">Поиск</span></a>
+        <div>
+          <form class="navigation-search-form" action="https://echo.htmlacademy.ru/" method="get">
+            <label for="navigation-search"></label>
+            <input id="navigation-search" type="search" name="search" placeholder="Что ищем?" aria-label="Строка поиска, введите что ищете."><!--Думаю тут можно инпут вложить в лейбл без привязки через id, но это не точно)-->
+          </form>
+        </div>
+      </li>
+      <li>
+        <a href="#">Вход</a>
+        <div>
+          <form class="navigation-login-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="navigation-login-email">Логин</label>
+              <input id="navigation-login-email" type="text" name="login" placeholder="user@example.com" aria-label="Введите ваш логин" required>
+              <label class="visually-hidden" for="navigation-login-password">Пароль</label>
+              <input id="navigation-login-password" type="password" name="password" placeholder="**********" aria-label="Введите ваш пароль" required>
+              <button type="submit" name="login" aria-label="Войти">Войти</button>
+            <div>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+            </div>
+          </form>
+          <button type="button" aria-label="Закрыть">Закрыть</button>
+        </div>
+      </li>
+      <li>
+        <a href="#">Пусто</a>
+      </li>
+    </ul>
    </nav>
    <strong>С 10 до 20, ежедневно<br>
            812 450-25-25
@@ -56,10 +82,9 @@
      <h1>Крем-брюле и пломбир с малиновым джемом</h1>
      <img src="img/slider-1.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
      <a href="#">Давайте оба!</a>
-          <!--Слайдер-->
    </section>
    <!--Спец предложения-->
-   <h2>Наши акции</h2>
+   <h2 class="visually-hidden">Наши акции</h2>
    <section>
     <h3>Малинка даром!</h3>
     <p> При покупке 2 кг любого фруктового мороженого,<br>
@@ -76,7 +101,7 @@
    </section>
    <!--Карточки товара-->
    <section class="product">
-     <h2>Попробуйте хиты</h2>
+     <h2 class="visually-hidden">Попробуйте хиты</h2>
     <article>
       <a href="#">
        <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -116,6 +141,7 @@
    </section>
    <!--Почему именно мы, какие приемущества-->
    <section>
+    <h2 class="visually-hidden">Почему именно мы?</h2>
     <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
     <div>
      <h3>Cовременное оборудование</h3>
@@ -124,7 +150,6 @@
         с использованием современного оборудования и проверенных временем технологий.
      </p>
      <h3>Ингредиенты</h3>
-
      <p>
         Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
         Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
@@ -144,8 +169,8 @@
     </div>
    </section>
    <!--Статья и рассылка-->
-   <h2>Блог</h2>
    <section>
+    <h2 class="visually-hidden">Наш блог</h2>
     <article>
      <span>Новое в нашем блоге</span>
      <a href="#">
@@ -153,27 +178,27 @@
      </a>
     </article>
     <section>
+     <h2 class="visually-hidden">Подписаться на нашу рассылку</h2>
      <p>
         Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.<br>
         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
      </p>
-      <!--Форма-->
-     <button type="submit">Отправить</button>
+     <form class="subscription-form" method="post" action="https://echo.htmlacademy.ru/">
+       <label for="subscription-email" aria-label="Введите вашу электронную почту для подписки на рассылки"></label>
+       <input id="subscription-email" type="email" name="subscription-email" placeholder="email@example.com">
+       <button type="submit">Отправить</button>
+     </form>
     </section>
    </section>
    <address>
-    <img src="img/map.jpg" width="1250" height="430" alt="Карта проезда">
+    <img src="img/map.jpg" width="1250" height="430" alt="Адрес главного офиса: г. Санкт-Петербург, ул.Большая Конюшенная 19/8, Телефон для заказа 8 812 450-25-25, ежедневно с 10 до 20">
     <div>
-     <p>
       <span>Адрес главного офиса<br> и офлайн магазина:</span><br>
-      <b>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</b>
-     </p>
-     <p>
+      <b>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</b><br>
       <span>Для заказов по телефону:</span><br>
       <b>8 812 450-25-25</b><br>
       <span>(с 10 до 20 ежедневно)</span>
-     </p>
-     <a href="#">Форма обратной связи</a>
+      <a href="feedback.html">Форма обратной связи</a>
     </div>
    </address>
   </main>
@@ -181,29 +206,23 @@
    <h2>Контактная информация</h2>
    <section>
     <ul>
-     <li><a href="#">Twitter</a></li>
-     <li><a href="#">Instagram</a></li>
-     <li><a href="#">Facebook</a></li>
-     <li><a href="#">VK</a></li>
+     <li><a href="#" aria-label="Глейси в Твиттере">Twitter</a></li>
+     <li><a href="#" aria-label="Глейси в Инстаграм">Instagram</a></li>
+     <li><a href="#" aria-label="Глейси в Фейсбук">Facebook</a></li>
+     <li><a href="#" aria-label="Глейси во Вконтакте">VK</a></li>
     </ul>
    </section>
-   <section>
-    <h2>О нас</h2>
-    <ul>
-     <li>
-      <a href="#">Для поставщиков</a>
-     </li>
-     <li>
-      <a href="#">О производителе</a>
-     </li>
-     <li>
-      <a href="#">Наши документы</a>
-     </li>
-     <li>
-      <a href="#">Экологические стандарты</a>
-     </li>
-    </ul>
-   </section>
+	<section>
+	 <h2 class="visually-hidden">О нас</h2>
+	 <ul>
+		<li><a href="#">Для поставщиков</a></li>
+    <li><a href="#">О производителе</a></li>
+   </ul>
+   <ul>
+		<li><a href="#">Наши документы</a></li>
+		<li><a href="#">Экологические стандарты</a></li>
+	 </ul>
+	</section>
    <section>
     <a href="https://htmlacademy.ru/intensive/htmlcss">
       <img src="img/icons/logo-html.svg" width="108" height="39" alt="HTML Academy">
@@ -211,12 +230,5 @@
     <span>Сделано в HTML Academy 2017</span>
    </section>
   </footer>
-  <section>
-   <h2>Личный кабинет</h2>
-   <p>Введите свой логин и пароль</p>
-   <!-- Форма-->
-   <button type="button">Закрыть</button>
-  </section>
  </body>
-
 </html>
