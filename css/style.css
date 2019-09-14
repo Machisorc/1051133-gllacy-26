@@ -3,6 +3,19 @@ body {
     /* background:url('../img/bg/bg.jpg'); */
     background-color: #849d8f;
 }
+
+}
+form {
+  width: 600px;
+}
+section {
+  display: block;
+}
+.position-item .del-item {
+width: 11px;
+height: 11px;
+background-image: url(../img/icons/cross-small.svg);
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -19,7 +32,8 @@ address {
 article {
   padding: 10px 0 0 0;
 }
-.product img {
+.index-hit img,
+ .position img {
   border-radius: 50%;
 }
 input[type="submit"],
@@ -33,11 +47,22 @@ button {
   border: none;
 }
 .btn {
-margin: 0 5px;
-padding: 6px 15px;
-color:#fff;
-border-radius: 20px;
-background: linear-gradient(0deg,
-#e74b36,#f26843);
-text-decoration: none;
+  margin: 0 5px;
+  padding: 6px 15px;
+  color:#fff;
+  border-radius: 20px;
+  background: linear-gradient(0deg,#e74b36,#f26843);
+  text-decoration: none;
 }
+/*.left {
+  width: 400px;
+  height: 150px;
+  background-image: url(../img/bg/malinka-bg.jpg);
+}
+.right {
+  width: 400px;
+  height: 150px;
+  background: url(../img/bg/choco-bg.jpg);
+}
+*/
+

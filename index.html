@@ -8,12 +8,13 @@
  </head>
 
  <body>
+
   <!--Главное меню и лого-->
   <header>
-   <nav>
+   <nav class="main-navigation">
     <img src="img/icons/logo.svg" width="154" height="64" alt="Логотип магазина мороженного «GllasyShop»">
-    <ul>
-     <li>
+    <ul class="main-menu">
+     <li class="menu-item">
       <a href="#">Каталог</a>
       <ul>
        <li>
@@ -32,26 +33,26 @@
         <a href="#">Мелорин</a>
       </ul>
      </li>
-     <li>
-      <a href="delivery.html">Доставка и оплата</a>
+     <li class="menu-item">
+      <a href="#">Доставка и оплата</a>
      </li>
-     <li>
-      <a href="about.html">О Компании</a>
+     <li class="menu-item">
+      <a href="#">О Компании</a>
      </li>
     </ul>
-    <ul>
+    <ul class="user-block">
       <li>
-        <a href="#"><img src="img/icons/loupe.svg" alt="поиск"> <span class="visually-hidden">Поиск</span></a>
-        <div>
+        <a class="search" href="#"><img src="img/icons/loupe.svg" alt="поиск"> <span class="visually-hidden">Поиск</span></a>
+        <section class="search-form">
           <form class="navigation-search-form" action="https://echo.htmlacademy.ru/" method="get">
             <label for="navigation-search"></label>
             <input id="navigation-search" type="search" name="search" placeholder="Что ищем?" aria-label="Строка поиска, введите что ищете."><!--Думаю тут можно инпут вложить в лейбл без привязки через id, но это не точно)-->
           </form>
-        </div>
+        </section>
       </li>
       <li>
-        <a href="#"><img src="img/icons/entrance.svg" alt="Войти">Вход</a>
-        <div>
+        <a class="login" href="#"><img src="img/icons/entrance.svg" alt="Войти">Вход</a>
+        <section class="login-form">
           <form class="navigation-login-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="navigation-login-email">Логин</label>
               <input id="navigation-login-email" type="text" name="login" placeholder="user@example.com" aria-label="Введите ваш логин" required>
@@ -63,10 +64,10 @@
                 <a href="#">Новая регистрация</a>
             </div>
           </form>
-        </div>
+        </section>
       </li>
       <li>
-        <a href="#"><img src="img/icons/basketfree.svg" alt="Пустая корзина">Пусто</a>
+        <a class="basket" href="#"><img src="img/icons/basketfree.svg" alt="Пустая корзина">Пусто</a>
       </li>
     </ul>
    </nav>
@@ -77,7 +78,7 @@
   <main>
     <h2>Магазин мороженого «GllacyShop»</h2>
    <!--Заголовок страницы-->
-   <section>
+   <section class="slider">
       <ul>
           <li>
           <h1>Крем-брюле и пломбир с малиновым джемом</h1>
@@ -96,26 +97,28 @@
           </li>
           </ul>
    </section>
+   <section class="banner">
    <!--Спец предложения-->
    <h2 class="visually-hidden">Наши акции</h2>
-   <section>
-    <h3>Малинка даром!</h3>
-    <p> При покупке 2 кг любого фруктового мороженого,<br>
+   <section class="banner-item banner-left">
+    <h3 class="banner-name">Малинка даром!</h3>
+    <p class="bannner-text"> При покупке 2 кг любого фруктового мороженого,<br>
         добавим в ваш заказ банку малинового варенья бесплатно.
     </p>
     <a class="btn" href="#">Хочу варенье!</a>
    </section>
-   <section>
-    <h3>Шоколадки даром!</h3>
-    <p> При покупке 2 кг пломбира, добавим в ваш заказ упаковку<br>
+   <section class="banner-item banner-right">
+    <h3 class="banner-name">Шоколадки даром!</h3>
+    <p class="banner-text"> При покупке 2 кг пломбира, добавим в ваш заказ упаковку<br>
         вкуснейшей шоколадной присыпки совершенно бесплатно.
     </p>
     <a class="btn" href="#">Хочу шоколадки!</a>
    </section>
+  </section>
    <!--Карточки товара-->
-   <section class="product">
+   <section class="index-hit">
      <h2 class="visually-hidden">Попробуйте хиты</h2>
-    <article>
+    <article class="index-hit-item">
       <a href="#">
        <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
        <h4>Сливочное с апельсиновым джемом и цитрусовой стружкой</h4>
@@ -124,7 +127,7 @@
       <span>/кг</span>
       <a class="btn" href="#">Быстрый просмотр</a>
     </article>
-    <article>
+    <article class="index-hit-item">
       <a href="#">
        <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
      <h4>Сливочно-кофейное с кусочками шоколада</h4>
@@ -132,8 +135,8 @@
       <strong>380 ₽</strong>
       <span>/кг</span>
       <a class="btn" href="#">Быстрый просмотр</a>
-    </article>
-    <article>
+    </article >
+    <article class="index-hit-item">
       <a href="#">
        <img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
        <h4>Сливочно-клубничное с присыпкой из белого шоколада</h4>
@@ -142,7 +145,7 @@
       <span>/кг</span>
       <a class="btn" href="#">Быстрый просмотр</a>
     </article>
-    <article>
+    <article class="index-hit-item">
       <a href="#">
        <img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
        <h4>Сливочное крем-брюле с карамельной подливкой</h4>
@@ -153,7 +156,7 @@
     </article>
    </section>
    <!--Почему именно мы, какие приемущества-->
-   <section>
+   <section class="about-us">
     <h2 class="visually-hidden">Почему именно мы?</h2>
     <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
     <div>
@@ -182,15 +185,15 @@
     </div>
    </section>
    <!--Статья и рассылка-->
-   <section>
+   <section class="banner">
     <h2 class="visually-hidden">Наш блог</h2>
-    <article>
+    <article class="banner-item new-post">
      <span>Новое в нашем блоге</span>
      <a href="#">
        <h3>10 способов сервировки фруктовых щербетов к столу</h3>
      </a>
     </article>
-    <section>
+    <section class="banner-item subscription">
      <h2 class="visually-hidden">Подписаться на нашу рассылку</h2>
      <p>
         Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.<br>
@@ -198,26 +201,27 @@
      </p>
      <form class="subscription-form" method="post" action="https://echo.htmlacademy.ru/">
        <label for="subscription-email" aria-label="Введите вашу электронную почту для подписки на рассылки"></label>
-       <input id="subscription-email" type="email" name="subscription-email" placeholder="email@example.com">
+       <input id="subscription-email" type="email" name="subscription-email" placeholder="email@example.com" required>
        <button type="submit">Отправить</button>
      </form>
     </section>
    </section>
-   <address>
+   <address class="map">
     <img src="img/map.jpg" width="1250" height="430" alt="Адрес главного офиса: г. Санкт-Петербург, ул.Большая Конюшенная 19/8, Телефон для заказа 8 812 450-25-25, ежедневно с 10 до 20">
-    <div>
+    <section>
       <span>Адрес главного офиса<br> и офлайн магазина:</span><br>
       <b>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</b><br>
       <span>Для заказов по телефону:</span><br>
       <b>8 812 450-25-25</b><br>
       <span>(с 10 до 20 ежедневно)</span>
       <a class="btn" href="feedback.html">Форма обратной связи</a>
-    </div>
+    </section>
    </address>
   </main>
   <footer>
-   <h2>Контактная информация</h2>
+
    <section>
+    <h2>Контактная информация</h2>
     <ul>
      <li><a href="#" aria-label="Глейси в Твиттере">Twitter</a></li>
      <li><a href="#" aria-label="Глейси в Инстаграм">Instagram</a></li>
@@ -243,5 +247,27 @@
     <span>Сделано в HTML Academy 2017</span>
    </section>
   </footer>
+  <section class="visually-hidden">
+    <h3>Мы обязательно вам ответим!</h3>
+      <input type="image" src="img/icons/cross-big.svg" alt="Закрыть">
+      <form action="index.html" method="post">
+        <p>
+          <label>
+            <input type="text" name="popup-name" placeholder="Имя Фамилия" aria-label="Введите ваше имя и фамилию" required>
+          </label>
+        </p>
+        <p>
+          <label class="hide-top">
+            <input type="email" name="popup-email" placeholder="email@example.com" aria-label="Введите вашу электроную почту" required>
+          </label>
+        </p>
+        <p>
+          <label class="hide-top">
+            <textarea name="popup-message" rows="10" cols="40" placeholder="В свободной форме" aria-label="Введите дополнительный коментарий в свободной форме"></textarea>
+          </label>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+  </section>
  </body>
 </html>
