@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Каталог мороженого</title>
@@ -14,19 +14,19 @@
 <div class="wrapper">
   <header class="main_header">
     <div class="container clearfix">
-      <div class="logo">
-        <a href="index.html">
-        <img src="img/icons/logo.svg" width="154" height="64" alt="Логотип магазина мороженного «GllasyShop»">
-        </a>
-      </div>
       <nav class="nav">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/icons/logo.svg" width="154" height="64" alt="Логотип магазина мороженного «GllasyShop»">
+          </a>
+        </div>
         <ul class="nav_menu">
           <li class="nav_item">
             <a class="active" href="#">Каталог</a>
             <ul class="sub_menu">
               <li><a class="sub_new" href="#">Новинки</a></li>
               <li><a class="active" href="catalog.html">Сливочное</a></li>
-              <li><a href="#">Щербет</a></li>
+              <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
               <li><a href="#">Мелорин</a></li>
             </ul>
@@ -38,7 +38,6 @@
             <a href="#">О Компании</a>
           </li>
         </ul>
-      </nav>
         <div class="user_block">
           <ul class="user_menu">
             <li class="menu_item">
@@ -54,14 +53,17 @@
               <a class="login user_btn" href="#">Вход</a>
               <section class="login_form">
                 <form action="https://echo.htmlacademy.ru/" method="post">
-                  <label class="visually_hidden" for="navigation-login-email">Логин</label>
-                  <input id="login_email" type="text" name="login" placeholder="user@example.com" aria-label="Введите ваш логин" required>
-                  <label class="visually_hidden" for="navigation-login-password">Пароль</label>
-                  <input id="login_password" type="password" name="password" placeholder="**********" aria-label="Введите ваш пароль" required>
-                  <button class="btn bnt_sign" type="submit" name="login" aria-label="Войти">Войти</button>
+                  <label class="visually_hidden" for="login-email">Логин</label>
+                  <input id="login-email" type="text" name="login" placeholder="user@example.com" aria-label="Введите ваш логин" required>
+                  <label class="visually_hidden" for="login-password">Пароль</label>
+                  <input id="login-password" type="password" name="password" placeholder="**********" aria-label="Введите ваш пароль" required>
+
                   <div class="login_links">
-                    <a href="#">Забыли пароль?</a>
-                    <a href="#">Новая регистрация</a>
+                    <button class="btn btn_sign" type="submit" name="login" aria-label="Войти">Войти</button>
+                    <p>
+                      <a href="#" aria-label="Забыли пароль?">Забыли пароль?</a>
+                      <a href="#" aria-label="Регистрация нового пользователя">Новая регистрация</a>
+                    </p>
                   </div>
                 </form>
               </section>
@@ -71,16 +73,15 @@
              <section class="basket_form">
               <div class="position">
                 <ul class="position_item">
-                  <li class="del"></li>
+                  <li><a class="del" href="#" aria-label="Удалить позицию"></a></li>
                   <li><img src="img/product-1.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33"></li>
                   <li class="name">Пломбир с апельсиновым джемом</li>
                   <li class="calc">1,5кг x <span>200 руб.</span></li>
                   <li class="total">300руб.</li>
                 </ul>
                 <ul class="position_item">
-                  <li class="del"></li>
-                  <li><img src="img/product-3.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33"
-                         height="33"></li>
+                  <li><a class="del" href="#" aria-label="Удалить позицию"></a></li>
+                  <li><img src="img/product-3.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33"></li>
                   <li class="name">Клубничный пломбир с присыпкой из белого шоколада</li>
                   <li class="calc">1,5кг x <span>300 руб.</span></li>
                   <li class="total">450руб.</li>
@@ -98,6 +99,7 @@
             <strong class="ui_tel">8 812 450-25-25</strong>
           </div>
         </div>
+      </nav>
     </div>
   </header>
 <!--Основной контент-->
@@ -140,7 +142,7 @@
           <input id="thirty" type="radio" name="fatness" value="30">
           <label for="thirty">до 30%</label>
           <input id="more-thirty" type="radio" name="fatness" value="more 30">
-          <label for="moret-hirty">выше 30%</label>
+          <label for="more-thirty">выше 30%</label>
         </div>
       </fieldset>
       <fieldset class="filter_category">
@@ -224,7 +226,7 @@
                 <span>/кг</span>
               </div>
             </div>
-            <h4 class="hit_title"><a href="#">Сливочное с брусничным джемом</a></h4>
+            <h4 class="hit_title"><a href="#">Сливочное с брусничным<br> джемом</a></h4>
             <a class="btn btn_view" href="#">Быстрый просмотр</a>
           </div>
       </article>
@@ -276,7 +278,7 @@
                 <span>/кг</span>
               </div>
             </div>
-            <h4 class="hit_title"><a href="#">Сливочно-ванильное с кусочками шоколада</a></h4>
+            <h4 class="hit_title"><a href="#">Сливочно-ванильное с<br> кусочками шоколада</a></h4>
             <a class="btn btn_view" href="#">Быстрый просмотр</a>
           </div>
       </article>
@@ -289,7 +291,7 @@
                 <span>/кг</span>
               </div>
             </div>
-            <h4 class="hit_title"><a href="#">Сливочноe с ментоловым сиропом</a></h4>
+            <h4 class="hit_title"><a href="#">Сливочноe с ментоловым<br> сиропом</a></h4>
             <a class="btn btn_view" href="#">Быстрый просмотр</a>
           </div>
         </article>
@@ -324,8 +326,8 @@
   <div class="pag_wrap clearfix">
     <div>
     <ul class="paginator">
-      <li><a href="#" aria-label="На предидущую страницу">&lsaquo;</a></li>
-      <li><a class="pag_activ" href="#" aria-label="Страница №1">1</a></li>
+      <li><a href="#" aria-label="На предидущую страницу" disabled></a>&lsaquo;</a></li>
+      <li class="pag_activ">1</li>
       <li><a href="#" aria-label="Страница №2">2</a></li>
       <li><a href="#" aria-label="Страница №3">3</a></li>
       <li><a href="#" aria-label="Страница №4">4</a></li>
@@ -338,30 +340,30 @@
 </main>
 
 <footer class="main_footer">
-    <div class="container clearfix">
+    <div class="container">
       <section class="social_links">
         <h2 class="visually_hidden">Контактная информация</h2>
-        <a class="link_btn btn_tw" href="#" aria-label="Глейси в Твиттере"><span class="visually_hidden">Twitter</span></a>
-        <a class="link_btn btn_in" href="#" aria-label="Глейси в Инстаграм"><span class="visually_hidden">Instagram</span></a>
-        <a class="link_btn btn_fb" href="#" aria-label="Глейси в Фейсбук"><span class="visually_hidden">Facebook</span></a>
-        <a class="link_btn btn_vk" href="#" aria-label="Глейси во Вконтакте"><span class="visually_hidden">VK</span></a>
+        <ul class="links_list">
+          <li><a class="link_btn btn_tw" href="#" aria-label="Глейси в Твиттере"><span class="visually_hidden">Twitter</span></a></li>
+          <li><a class="link_btn btn_in" href="#" aria-label="Глейси в Инстаграм"><span class="visually_hidden">Instagram</span></a></li>
+          <li><a class="link_btn btn_fb" href="#" aria-label="Глейси в Фейсбук"><span class="visually_hidden">Facebook</span></a></li>
+          <li><a class="link_btn btn_vk" href="#" aria-label="Глейси во Вконтакте"><span class="visually_hidden">VK</span></a></li>
+        </ul>
       </section>
       <section class="info">
         <h2 class="visually_hidden">О нас</h2>
         <ul class="info_item info_left">
           <li><a class="heart" href="#">Для поставщиков</a></li>
-          <li><a href="#">О производителе</a></li>
-        </ul>
-        <ul class="info_item info_right">
           <li><a href="#">Наши документы</a></li>
+          <li><a href="#">О производстве</a></li>
           <li><a href="#">Экологические стандарты</a></li>
         </ul>
       </section>
       <section class="copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на сайт HTML Academy">
           <img src="img/icons/logo-html.svg" width="108" height="39" alt="HTML Academy">
         </a><br>
-        <span>Сделано в HTML Academy &copy; 2019</span>
+        Сделано в <a class="copyright_link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на сайт HTML Academy">HTML Academy</a> &copy; 2019
       </section>
     </div>
   </footer>

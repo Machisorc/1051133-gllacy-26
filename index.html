@@ -3,29 +3,32 @@
 
 <head>
   <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Интернет магазин мороженого «GllacyShop»</title>
 </head>
 
 <body>
+  <input type="radio" id="btn-1" name="toggle" checked>
+  <input type="radio" id="btn-2" name="toggle">
+  <input type="radio" id="btn-3" name="toggle">
 <div class="wrapper">
 
   <!--Главное меню и лого-->
   <header class="main_header">
     <div class="container clearfix">
-      <div class="logo">
-        <img src="img/icons/logo.svg" width="154" height="64" alt="Логотип магазина мороженного «GllasyShop»">
-      </div>
       <nav class="nav">
+        <div class="logo">
+          <img src="img/icons/logo.svg" width="154" height="64" alt="Логотип магазина мороженного «GllasyShop»">
+        </div>
         <ul class="nav_menu">
           <li class="nav_item">
             <a href="#">Каталог</a>
             <ul class="sub_menu">
               <li><a class="sub_new" href="#">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
-              <li><a href="#">Щербет</a></li>
+              <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
               <li><a href="#">Мелорин</a></li>
             </ul>
@@ -37,7 +40,6 @@
             <a href="#">О Компании</a>
           </li>
         </ul>
-      </nav>
         <div class="user_block">
           <ul class="user_menu">
             <li class="menu_item">
@@ -53,14 +55,16 @@
               <a class="login user_btn" href="#">Вход</a>
               <section class="login_form">
                 <form action="https://echo.htmlacademy.ru/" method="post">
-                  <label class="visually_hidden" for="navigation-login-email">Логин</label>
-                  <input id="login_email" type="text" name="login" placeholder="user@example.com" aria-label="Введите ваш логин" required>
-                  <label class="visually_hidden" for="navigation-login-password">Пароль</label>
-                  <input id="login_password" type="password" name="password" placeholder="**********" aria-label="Введите ваш пароль" required>
-                  <button class="btn bnt_sign" type="submit" name="login" aria-label="Войти">Войти</button>
+                  <label class="visually_hidden" for="login-email">Логин</label>
+                  <input id="login-email" type="text" name="login" placeholder="user@example.com" aria-label="Введите ваш логин" required>
+                  <label class="visually_hidden" for="login-password">Пароль</label>
+                  <input id="login-password" type="password" name="password" placeholder="**********" aria-label="Введите ваш пароль" required>
                   <div class="login_links">
-                    <a href="#">Забыли пароль?</a>
-                    <a href="#">Новая регистрация</a>
+                    <button class="btn btn_sign" type="submit" name="login" aria-label="Войти">Войти</button>
+                    <p>
+                      <a href="#">Забыли пароль?</a>
+                      <a href="#">Новая регистрация</a>
+                    </p>
                   </div>
                 </form>
               </section>
@@ -74,45 +78,51 @@
             <strong class="ui_tel">8 812 450-25-25</strong>
           </div>
         </div>
+      </nav>
     </div>
   </header>
   <main>
     <div class="container">
       <section class="slider">
         <ul>
-          <li>
+          <li id="slide_1" class="slide">
             <h1 class="slide_title">Крем-брюле и пломбир с малиновым джемом</h1>
             <!-- <img src="img/slider-1.png" alt="Рожок шоколадный пломбир и рожок с лимонным сорбетом" width="647" height="584">-->
             <a class="btn slider_btn" href="#">Давайте оба!</a>
           </li>
-          <li class="visually_hidden">
+          <li id="slide_2" class="slide">
             <h1 class="slide_title">Шоколадный пломбир и лимонный сорбет</h1>
            <!-- <img src="img/slider-2.png" alt="Рожок шоколадный пломбир и рожок с лимонным сорбетом" width="647" height="584">-->
-            <a class="btn" href="#">Давайте оба!</a>
+            <a class="btn slider_btn" href="#">Давайте оба!</a>
           </li>
-          <li class="visually_hidden">
+          <li id="slide_3" class="slide">
             <h1 class="slide_title">Пломбир с помадкой и клубничный щербет</h1>
             <!--<img src="img/slider-3.png" alt="Рожок с пломбиром с помадкой и рожок с клубничным щербетом" width="647" height="584">-->
-            <a class="btn" href="#">Давайте оба!</a>
+            <a class="btn slider_btn" href="#">Давайте оба!</a>
           </li>
         </ul>
+        <div class="toggle">
+          <label for="btn-1">1</label>
+          <label for="btn-2">2</label>
+          <label for="btn-3">3</label>
+        </div>
       </section>
       <section class="promo clearfix">
         <!--Спец предложения-->
         <h2 class="visually_hidden">Наши акции</h2>
         <section class="promo_item promo_left">
           <h3 class="promo_name">Малинка даром!</h3>
-          <p class="promo_text"> При покупке 2 кг любого фруктового мороженого,<br>
+          <p class="promo_text">При покупке 2 кг любого фруктового мороженого,
             добавим в ваш заказ банку малинового варенья бесплатно.
           </p>
-          <a class="btn btn_promo" href="#">Хочу варенье!</a>
+          <a class="btn promo_btn" href="#">Хочу варенье!</a>
         </section>
         <section class="promo_item promo_right">
           <h3 class="promo_name">Шоколадки даром!</h3>
-          <p class="promo_text"> При покупке 2 кг пломбира, добавим в ваш заказ упаковку<br>
+          <p class="promo_text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку<br>
             вкуснейшей шоколадной присыпки совершенно бесплатно.
           </p>
-          <a class="btn btn_promo" href="#">Хочу шоколадки!</a>
+          <a class="btn promo_btn" href="#">Хочу шоколадки!</a>
         </section>
       </section>
       <!--Карточки товара-->
@@ -153,7 +163,7 @@
                 <span>/кг</span>
               </div>
             </div>
-            <h4 class="hit_title"><a href="#"><a>Сливочно-клубничное с присыпкой из белого шоколада</a></h4>
+            <h4 class="hit_title"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h4>
             <a class="btn btn_view" href="#">Быстрый просмотр</a>
           </div>
         </article>
@@ -175,24 +185,23 @@
       <section class="features">
         <h2 class="visually_hidden">Почему именно мы?</h2>
         <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-        <div class="features_list col_left">
+        <div class="features_list">
           <h3 class="visually_hidden">Cовременное оборудование</h3>
           <p class="features_item features_icecream">
             Все наше мороженое изготавливается на собственном производстве,
             с использованием современного оборудования и проверенных временем технологий.
+          </p>
+          <h3 class="visually_hidden">Поставщики</h3>
+          <p class="features_item features_cow">
+            Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний,
+            с которыми нас связывает долговременное сотрудничество.
           </p>
           <h3 class="visually_hidden">Ингредиенты</h3>
           <p class="features_item features_leaf">
             Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
             Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
           </p>
-        </div>
-        <div class="features_list col_right">
-          <h3 class="visually_hidden">Поставщики</h3>
-          <p class="features_item features_cow">
-            Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний,
-            с которыми нас связывает долговременное сотрудничество.
-          </p>
+
           <h3 class="visually_hidden">Упаковка</h3>
           <p class="features_item features_thermometer">
             Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
@@ -204,7 +213,7 @@
       <section class="promo clearfix">
         <h2 class="visually_hidden">Наш блог</h2>
         <article class="promo_item new_post">
-          <span class="post_title">Новое в нашем блоге</span>
+          <p class="post_title">Новое в нашем блоге</p>
           <a href="#">
             <h3 class="post_text">10 способов сервировки фруктовых щербетов к столу</h3>
           </a>
@@ -229,29 +238,29 @@
           <h4>Адрес главного офиса<br> и офлайн магазина:</h4>
           <b>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</b>
           <h4>Для заказов по телефону:</h4>
-          <b>8 812 450-25-25</b><br>
+          <a class="tel"><b>8 812 450-25-25</b></a><br>
           <span>(с 10 до 20 ежедневно)</span>
           <a class="btn btn_feedback" href="feedback.html">Форма обратной связи</a>
       </section>
     </address>
   </main>
   <footer class="main_footer">
-      <div class="container clearfix">
+      <div class="container">
         <section class="social_links">
           <h2 class="visually_hidden">Контактная информация</h2>
-          <a class="link_btn btn_tw" href="#" aria-label="Глейси в Твиттере"><span class="visually_hidden">Twitter</span></a>
-          <a class="link_btn btn_in" href="#" aria-label="Глейси в Инстаграм"><span class="visually_hidden">Instagram</span></a>
-          <a class="link_btn btn_fb" href="#" aria-label="Глейси в Фейсбук"><span class="visually_hidden">Facebook</span></a>
-          <a class="link_btn btn_vk" href="#" aria-label="Глейси во Вконтакте"><span class="visually_hidden">VK</span></a>
+          <ul class="links_list">
+            <li><a class="link_btn btn_tw" href="#" aria-label="Глейси в Твиттере"><span class="visually_hidden">Twitter</span></a></li>
+            <li><a class="link_btn btn_in" href="#" aria-label="Глейси в Инстаграм"><span class="visually_hidden">Instagram</span></a></li>
+            <li><a class="link_btn btn_fb" href="#" aria-label="Глейси в Фейсбук"><span class="visually_hidden">Facebook</span></a></li>
+            <li><a class="link_btn btn_vk" href="#" aria-label="Глейси во Вконтакте"><span class="visually_hidden">VK</span></a></li>
+          </ul>
         </section>
         <section class="info">
           <h2 class="visually_hidden">О нас</h2>
-          <ul class="info_item info_left">
-            <li><a class="heart" href="#">Для поставщиков</a></li>
-            <li><a href="#">О производителе</a></li>
-          </ul>
-          <ul class="info_item info_right">
+          <ul class="info_item">
+            <li class="heart"><a class="main_item" href="#">Для поставщиков</a></li>
             <li><a href="#">Наши документы</a></li>
+            <li><a href="#">О производстве</a></li>
             <li><a href="#">Экологические стандарты</a></li>
           </ul>
         </section>
@@ -259,7 +268,7 @@
           <a href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/icons/logo-html.svg" width="108" height="39" alt="HTML Academy">
           </a><br>
-          <span>Сделано в HTML Academy &copy; 2019</span>
+          Сделано в <a class="copyright_link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019
         </section>
       </div>
     </footer>
