@@ -234,7 +234,7 @@
         <address class="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5918027607663!2d30.325804709799385!3d59.938915332344045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
           1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExO
-          DY!5e0!3m2!1sru!2sru!4v1572421672201!5m2!1sru!2sru" width="100%" height="430" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          DY!5e0!3m2!1sru!2sru!4v1572421672201!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
           <section class="feedback" aria-label="Адрес главного офиса: г. Санкт-Петербург, ул.Большая Конюшенная 19/8, Телефон для заказа 8 812 450-25-25, ежедневно с 10 до 20">
             <h4>Адрес главного офиса<br> и офлайн - магазина:</h4>
             <b>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</b>
@@ -278,18 +278,12 @@
     <section class="modal modal_feedback" aria-label="Открылась форма обратной связи">
       <h3>Мы обязательно вам ответим!</h3>
       <form class="modal_form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="">
-        <span class="visually_hidden">Введите ваше имя и фамилию</span>
-        <input type="text" name="login" placeholder="Имя Фамилия"  required>
-        </label>
-        <label class="">
-        <input type="email" name="email" placeholder="email@example.com" aria-label="Введите вашу электроную почту" required>
-        <span class="visually_hidden">Ваша почта для ответа?</span>
-        </label>
-        <label class="">
-        <textarea name="popup-message" rows="5" cols="100" placeholder="В свободной форме" aria-label="Введите дополнительный коментарий в свободной форме" required></textarea>
-        <span class="visually_hidden">Напишите что-нибудь</span>
-        </label>
+        <label class="visually_hidden" for="user-name">Введите ваше имя и фамилию</label>
+        <input id="user-name" type="text" name="login" placeholder="Имя Фамилия">
+        <label class="visually_hidden" for="user-email">Ваша почта для ответа?</label>
+        <input id="user-email" type="email" name="email" placeholder="email@example.com" aria-label="Введите вашу электроную почту">
+        <label class="visually_hidden" for="user-message">Напишите что-нибудь</label>
+        <textarea id="user_message" name="popup-message" rows="5" cols="100" placeholder="В свободной форме" aria-label="Введите дополнительный коментарий в свободной форме"></textarea>
         <button class="btn popup_btn" type="submit">Отправить</button>
       </form>
       <button class="modal_close" type="button" title="Закрыть">Закрыть</button>
