@@ -40,6 +40,9 @@ input:focus {
 body>input[type="radio"] {
   display: none;
 }
+.light {
+  background: url(../img/bg/light.png) no-repeat;
+}
 a {
   color: #fff;
   text-decoration: none;
@@ -227,10 +230,6 @@ img {
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.2);
 }
-.user_btn:hover {
-  color:#323232;
-  background-color:#fff
- }
 
 .user_menu {
   display: flex;
@@ -367,6 +366,11 @@ img {
   color: #323232;
   background-color: #fff;
 }
+.menu_item:active .user_btn {
+  color: #323232;
+  background-color: #fff;
+}
+
 .user_info {
   margin:0;
   margin-top: -10px;
@@ -432,7 +436,7 @@ img {
 .toggle {
   position: absolute;
   left: 0;
-  bottom: 25px;
+  bottom: 20px;
   font-size: 0;
 }
 .toggle label {
@@ -1344,7 +1348,7 @@ input[type=range]::-webkit-slider-thumb:hover {
   box-shadow: inset 0 2px 1px #696969;
 }
 .filters_form .feature_wrapper {
-  min-height: 36px;
+  max-height: 36px;
   padding :0 17px;
   line-height: 36px;
   border-radius: 18px
