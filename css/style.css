@@ -717,21 +717,22 @@ img {
   min-width: 520px;
 }
 .new_post {
-  padding-top: 20px;
+  padding-top: 22px;
   background: #fff url(../img/bg/klubnika-bg.jpg) no-repeat;
   background-position: -27px -223px;
 }
 .post_title {
   margin: 0;
+  margin-bottom: 18px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 600;
   color: #323232;
 }
-.post_text h3 {
+.post_text {
   max-width: 330px;
   margin: 0;
-  margin-top: 4px;
+  margin-top: -14px;
   display: block;
   font-size: 24px;
   line-height: 30px;
@@ -739,11 +740,15 @@ img {
   color: #323232;
   text-decoration: underline;
 }
-.post_text h3:hover,
-.post_text h3:active,
-.post_text h3:focus,
-.post_text h3:focus-within {
+.post_text a {
+  color: #323232;
+}
+.post_text a:hover,
+.post_text a:active,
+.post_text a:focus,
+.post_text a:focus-within {
   color: #ffbc9e;
+  text-decoration: underline;
 }
 .subscription {
   background:  url(../img/bg/bg.jpg);
@@ -792,10 +797,6 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   font-style: normal;
-  -moz-background-size: 100%;
-  -webkit-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
 }
 
 .map iframe {
@@ -849,7 +850,7 @@ img {
   line-height: 18px;
   color: #fff;
   margin-top: 24px;
-  margin-bottom: 19px;
+  padding-bottom: 19px;
 }
 .main_footer  {
   display: flex;
@@ -925,7 +926,6 @@ img {
   display: flex;
   width: 355px;
   margin: 0;
-  margin-left: 10px;
   padding: 0;
   padding-top: 8px;
   list-style: none;
@@ -942,8 +942,8 @@ img {
   position: absolute;
   width: 15px;
   height: 13px;
-  left: -2px;
-  top: 10px;
+  left: 0px;
+  top: 12px;
   content: "";
   background-image: url(../img/icons/heart.svg);
   background-size: 15px 13px;
@@ -1434,7 +1434,6 @@ li.calc span {
   cursor: pointer;
 }
 .filters_form button:active {
-  padding: 9px 28px;
   color: #323232;
   background-color :#ededed;
   border: none;
