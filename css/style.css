@@ -12,7 +12,6 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
-
 .visually_hidden {
   position: absolute;
   width: 1px;
@@ -157,19 +156,18 @@ a {
   border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   overflow: hidden;
- }
- .
- .sub_menu li {
+}
+.sub_menu li {
   list-style: none;
- }
+}
 .sub_menu a,
- .user_menu a {
+.user_menu a {
   display: block;
   padding: 8px 20px;
   font-size: 14px;
   line-height: 16px;
   text-decoration: none;
- }
+}
 .sub_menu a {
   color: #323232;
   white-space: nowrap;
