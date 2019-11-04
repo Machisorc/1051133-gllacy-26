@@ -533,10 +533,8 @@ img {
 .promo_name,
 .promo_text {
   font-weight: 700;
-  text-align: left;
 }
 .promo_left {
-  text-align: left;
   background: url(../img/bg/malinka-bg.jpg) no-repeat;
   background-size: cover;
 }
