@@ -158,6 +158,7 @@ img {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   overflow: hidden;
  }
+ .
  .sub_menu li {
   list-style: none;
  }
@@ -194,7 +195,16 @@ img {
   top: 40px;
   left: -10px;
 }
+.nav_item:focus-within .sub_menu {
+  display: block;
+}
 .sub_menu a:hover {
+  background-color: #fbded8;
+ }
+ .sub_menu a:focus-within {
+  background-color: #fbded8;
+ }
+ .sub_menu a:focus {
   background-color: #fbded8;
  }
 .sub_menu a:active {
@@ -206,6 +216,7 @@ img {
 .nav_item >a:active,
 .nav_item >a:active::after {
   background-color: #ededed;
+  color: #323232;
 }
 .nav_menu a.active,
 .sub_menu a.active {
@@ -620,6 +631,13 @@ img {
   color: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+.hit_title a:hover,
+.hit_title a:active,
+.hit_title a:focus,
+.hit_title a:focus-within {
+  color:#ffbc9e;
+  border-bottom: 1px solid rgba(249, 172, 159, 0.3);
+}
 .price {
   position: absolute;
   bottom: 8px;
@@ -723,7 +741,8 @@ img {
 }
 .post_text h3:hover,
 .post_text h3:active,
-.post_text h3:focus {
+.post_text h3:focus,
+.post_text h3:focus-within {
   color: #ffbc9e;
 }
 .subscription {
@@ -946,10 +965,6 @@ padding: 0;
 }
 .copyright_link:hover,
 .copyright_link:active,
-.hit_title a:hover,
-.hit_title a:active,
-.hit_title a:focus,
-.hit_title a:focus-within,
 .copyright_link:focus,
 .copyright_link:focus-within {
   color: #ffbc9e;
@@ -1085,17 +1100,7 @@ li.pag_activ {
   background-color:  #f8f7f4;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
-
-.paginator a,
-.menu_item:hover .search_form,
-.menu_item:focus-within .search_form,
-.menu_item:active .search_form,
-.menu_item:hover .login_form,
-.menu_item:focus-within .login_form,
-.menu_item:active .login_form,
-.menu_item:hover .basket_form,
-.menu_item:focus-within .basket_form,
-.menu_item:active .basket_form {
+.paginator a {
   display: block;
 }
 .menu_item:hover .search_form,
@@ -1106,6 +1111,16 @@ li.pag_activ {
 .menu_item:focus .search_form,
 .menu_item:focus .login_form,
 .menu_item:focus .basket_form{
+  display: block;
+}
+.menu_item:focus-within .search_form,
+.menu_item:focus-within .login_form,
+.menu_item:focus-within .basket_form {
+  display: block;
+}
+.menu_item:active .search_form,
+.menu_item:active .login_form,
+.menu_item:active .basket_form {
   display: block;
 }
 .paginator a:active,
@@ -1143,6 +1158,14 @@ li.pag_activ {
   font-weight: 400;
   color: #323232;
   text-decoration: underline;
+}
+.login_links a:hover,
+.login_links a:active,
+.login_links a:focus-within {
+  color: #ffbc9e;
+}
+.login_links a:focus {
+  color: #ffbc9e;
 }
 .login_form .btn_sign {
   padding: 10px 26px;
@@ -1385,7 +1408,7 @@ li.calc span {
 }
 .filters_form select:hover {
   color: #343434;
-  background: #fff url(../img/icons/icon-down-dir.svg) no-repeat 170px 50%;
+  background: rgba(255, 255, 255, 0.2) url(../img/icons/icon-down-dir.svg) no-repeat 170px 50%;
   cursor: pointer;
 }
 .filters_form option {
