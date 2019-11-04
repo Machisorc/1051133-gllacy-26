@@ -864,9 +864,7 @@ img {
  text-decoration:none;
  border-bottom:1px solid rgba(255, 255, 255, 0.2);
 }
-.social_links {
- width: 188px;
-}
+
 .links_list {
   display: flex;
   padding: 0;
