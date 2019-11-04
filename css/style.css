@@ -9,7 +9,10 @@ body {
   line-height: 22px;
   color: #fff;
   background-color: #849d8f;
+  max-width: 100%;
+  overflow-x: hidden;
 }
+
 .visually_hidden {
   position: absolute;
   width: 1px;
@@ -786,12 +789,9 @@ a {
 
 /* Карта и обратная связь*/
 
-.adress {
-  position: relative;
-  top: 0;
-  left:0;
-  font-style: normal;
-  margin: 0 auto;
+
+.adress_wrapper {
+ position: relative;
 }
 .map img {
   display: block;
@@ -802,11 +802,17 @@ a {
 .map iframe {
   position: absolute;
   z-index: 0;
-  width: 100%;
   top: 0;
   left: 0;
+  width: 100%;
 }
-
+.adress {
+  position: absolute;
+  width: 1200px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .feedback {
   position: absolute;
   width: 252px;
