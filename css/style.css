@@ -535,6 +535,7 @@ img {
   font-weight: 700;
 }
 .promo_left {
+  width: 560px;
   background: url(../img/bg/malinka-bg.jpg) no-repeat;
   background-size: cover;
 }
