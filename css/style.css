@@ -792,7 +792,11 @@ a {
   left:0;
   font-style: normal;
   margin: 0 auto;
-  width: 1200px;
+}
+.map img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 }
 
 .map iframe {
@@ -807,7 +811,7 @@ a {
   position: absolute;
   width: 252px;
   top: 50%;
-  right: 26px;
+  right: 25px;
   transform: translateY(-50%);
   padding: 28px 26px 30px 25px;
   font-size: 14px;
