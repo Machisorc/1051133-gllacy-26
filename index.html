@@ -20,10 +20,10 @@
             <div class="logo">
               <img src="img/icons/logo.svg" width="154" height="64" alt="Логотип магазина мороженного «GllasyShop»">
             </div>
-            <ul class="nav_menu" aria-label="Главное меню">
+            <ul class="nav_menu">
               <li class="nav_item">
                 <a href="#">Каталог</a>
-                <ul class="sub_menu" aria-label="Подменю каталога">
+                <ul class="sub_menu">
                   <li><a class="sub_new" href="#">Новинки</a></li>
                   <li><a href="catalog.html">Сливочное</a></li>
                   <li><a href="#">Щербеты</a></li>
@@ -38,7 +38,7 @@
                 <a href="#">О Компании</a>
               </li>
             </ul>
-            <div class="user_block" aria-label="Пользовательськое меню">
+            <div class="user_block">
               <ul class="user_menu">
                 <li class="menu_item">
                   <a class="search user_btn" href="#" aria-label="Строка поиска"></a>
@@ -73,9 +73,10 @@
                   <a class="basket user_btn" href="#" aria-label="В корзине">Пусто</a>
                 </li>
               </ul>
-              <div class="user_info" aria-label="Телефон и график работы">
-                <strong class="ui_time" aria-label="Режим работы">С 10 до 20, ежедневно</strong><br>
-                <strong class="ui_tel" aria-label="Телефон для связи">8 812 450-25-25</strong>
+              <div class="user_info">
+                <h3 class="visually_hidden">График работы и телефон для связи</h3>
+                <strong class="ui_time">С 10 до 20, ежедневно</strong><br>
+                <strong class="ui_tel">8 812 450-25-25</strong>
               </div>
             </div>
           </nav>
@@ -184,22 +185,22 @@
             <h3 class="visually_hidden">Почему именно мы?</h3>
             <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
             <div class="features_list">
-              <h3 class="visually_hidden" aria-label="Мы используем">Cовременное оборудование</h3>
+              <h3 class="visually_hidden">Мы используем современное оборудование</h3>
               <p class="features_item features_icecream">
                 Все наше мороженое изготавливается на собственном производстве,
                 с использованием современного оборудования и проверенных временем технологий.
               </p>
-              <h3 class="visually_hidden" aria-label="У нас лучшие">Поставщики</h3>
+              <h3 class="visually_hidden">У нас лучшие поставщики</h3>
               <p class="features_item features_cow">
                 Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний,
                 с которыми нас связывает долговременное сотрудничество.
               </p>
-              <h3 class="visually_hidden" aria-label="Всегда свежие и качественные">Ингредиенты</h3>
+              <h3 class="visually_hidden">Всегда свежие и качественные ингредиенты</h3>
               <p class="features_item features_leaf">
                 Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
                 Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
               </p>
-              <h3 class="visually_hidden" aria-label="Современная и качественная">Упаковка</h3>
+              <h3 class="visually_hidden">Современная и качественная упаковка</h3>
               <p class="features_item features_thermometer">
                 Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
                 который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
@@ -232,12 +233,12 @@
         </div>
         <address class="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003356!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1572888200271!5m2!1sru!2sru" allowfullscreen=""></iframe>
-            <div class="feedback" aria-label="Адрес главного офиса: г. Санкт-Петербург, ул.Большая Конюшенная 19/8, Телефон для заказа 8 812 450-25-25, ежедневно с 10 до 20">
+            <div class="feedback">
               <p>Адрес главного офиса<br> и офлайн - магазина:</p>
               <b>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</b>
               <p>Для заказов по телефону:</p>
-              <a class="tel"><b>8 812 450-25-25</b></a><br>
-              <span>(с 10 до 20 ежедневно)</span>
+              <a class="tel" aria-label="Телефон для связи"><b>8 812 450-25-25</b></a>
+              <p>(с 10 до 20 ежедневно)</p>
               <a class="btn btn_feedback" href="" aria-label="Кнопка перехода к">Форма обратной связи</a>
             </div>
         </address>

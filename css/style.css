@@ -817,8 +817,7 @@ img {
   color: #323232;
   background-color: #fff;
 }
-.feedback p,
-.feedback span {
+.feedback p {
   margin: 0;
   font-size: 14px;
   line-height: 20px;
