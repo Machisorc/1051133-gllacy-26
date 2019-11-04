@@ -511,6 +511,8 @@ img {
   margin-bottom: 14px;
 }
 .promo_item {
+  display: flex;
+  flex-direction: column;
   padding: 16px 21px 24px 19px;
   max-width: 520px;
   min-height: 189px;
@@ -545,7 +547,7 @@ img {
 }
 .promo_btn {
   margin-top: 44px;
-  position: relative;
+  align-self: flex-end;
 }
 .index_hit {
   display: block;
