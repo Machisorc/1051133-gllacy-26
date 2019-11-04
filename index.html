@@ -9,13 +9,13 @@
     <title>Интернет магазин мороженого «GllacyShop»</title>
   </head>
   <body>
-    <input type="radio" id="btn-1" name="toggle" checked>
-    <input type="radio" id="btn-2" name="toggle">
-    <input type="radio" id="btn-3" name="toggle">
+    <input class="visually_hidden" type="radio" id="btn-1" name="toggle" checked>
+    <input class="visually_hidden" type="radio" id="btn-2" name="toggle">
+    <input class="visually_hidden" type="radio" id="btn-3" name="toggle">
     <div class="wrapper">
+      <div class="container">
       <!--Главное меню и лого-->
       <header class="main_header">
-        <div class="container clearfix">
           <nav class="nav">
             <div class="logo">
               <img src="img/icons/logo.svg" width="154" height="64" alt="Логотип магазина мороженного «GllasyShop»">
@@ -23,7 +23,7 @@
             <ul class="nav_menu" aria-label="Главное меню">
               <li class="nav_item">
                 <a href="#">Каталог</a>
-                <ul class="sub_menu" aria-label="">
+                <ul class="sub_menu" aria-label="Подменю каталога">
                   <li><a class="sub_new" href="#">Новинки</a></li>
                   <li><a href="catalog.html">Сливочное</a></li>
                   <li><a href="#">Щербеты</a></li>
@@ -43,6 +43,7 @@
                 <li class="menu_item">
                   <a class="search user_btn" href="#" aria-label="Строка поиска"></a>
                   <section class="search_form">
+                      <h3 class="visually_hidden">Строка поиска</h3>
                     <form action="https://echo.htmlacademy.ru/" method="get">
                       <label class="visually_hidden" for="navigation-search">Поиск</label>
                       <input id="navigation-search" type="search" name="search" placeholder="Что ищем?" aria-label="Строка поиска, введите что ищете."><!--Думаю тут можно инпут вложить в лейбл без привязки через id, но это не точно)-->
@@ -52,6 +53,7 @@
                 <li class="menu_item">
                   <a class="login user_btn" href="#">Вход</a>
                   <section class="login_form">
+                    <h3 class="visually_hidden">Форма входа</h3>
                     <form action="https://echo.htmlacademy.ru/" method="post">
                       <label class="visually_hidden" for="login-email">Логин</label>
                       <input id="login-email" type="text" name="login" placeholder="user@example.com" aria-label="Введите ваш логин" required>
@@ -77,37 +79,35 @@
               </div>
             </div>
           </nav>
-        </div>
       </header>
+      <section class="slider">
+        <div class="toggle">
+          <label for="btn-1">1</label>
+          <label for="btn-2">2</label>
+          <label for="btn-3">3</label>
+        </div>
+        <ul class="slider_list">
+          <li id="slide_1" class="slider_item slide">
+            <h3 class="slide_title">Крем-брюле и пломбир с малиновым джемом</h3>
+            <!-- <img src="img/slider-1.png" alt="Рожок шоколадный пломбир и рожок с лимонным сорбетом" width="647" height="584">-->
+            <a class="btn slider_btn" href="#">Давайте оба!</a>
+          </li>
+          <li id="slide_2" class="slider_item slide">
+            <h3 class="slide_title">Шоколадный пломбир и лимонный сорбет</h3>
+            <!-- <img src="img/slider-2.png" alt="Рожок шоколадный пломбир и рожок с лимонным сорбетом" width="647" height="584">-->
+            <a class="btn slider_btn" href="#">Давайте оба!</a>
+          </li>
+          <li id="slide_3" class="slider_item slide">
+            <h3 class="slide_title">Пломбир с помадкой и клубничный щербет</h3>
+            <!--<img src="img/slider-3.png" alt="Рожок с пломбиром с помадкой и рожок с клубничным щербетом" width="647" height="584">-->
+            <a class="btn slider_btn" href="#">Давайте оба!</a>
+          </li>
+        </ul>
+      </section>
       <main>
-        <div class="container">
-          <section class="slider">
-            <ul>
-              <li id="slide_1" class="slide">
-                <h1 class="slide_title">Крем-брюле и пломбир с малиновым джемом</h1>
-                <!-- <img src="img/slider-1.png" alt="Рожок шоколадный пломбир и рожок с лимонным сорбетом" width="647" height="584">-->
-                <a class="btn slider_btn" href="#">Давайте оба!</a>
-              </li>
-              <li id="slide_2" class="slide">
-                <h1 class="slide_title">Шоколадный пломбир и лимонный сорбет</h1>
-                <!-- <img src="img/slider-2.png" alt="Рожок шоколадный пломбир и рожок с лимонным сорбетом" width="647" height="584">-->
-                <a class="btn slider_btn" href="#">Давайте оба!</a>
-              </li>
-              <li id="slide_3" class="slide">
-                <h1 class="slide_title">Пломбир с помадкой и клубничный щербет</h1>
-                <!--<img src="img/slider-3.png" alt="Рожок с пломбиром с помадкой и рожок с клубничным щербетом" width="647" height="584">-->
-                <a class="btn slider_btn" href="#">Давайте оба!</a>
-              </li>
-            </ul>
-            <div class="toggle">
-              <label for="btn-1">1</label>
-              <label for="btn-2">2</label>
-              <label for="btn-3">3</label>
-            </div>
-          </section>
           <section class="promo">
             <!--Спец предложения-->
-            <h2 class="visually_hidden">Наши акции</h2>
+            <h3 class="visually_hidden">Наши акции</h3>
             <section class="promo_item promo_left">
               <h3 class="promo_name">Малинка даром!</h3>
               <p class="promo_text">При покупке 2 кг любого фруктового мороженого,
@@ -125,7 +125,7 @@
           </section>
           <!--Карточки товара-->
           <section class="index_hit">
-            <h2 class="visually_hidden">Попробуйте хиты</h2>
+            <h3 class="visually_hidden">Попробуйте хиты</h3>
             <article class="hit_item">
               <div class="wrapper_ice hit">
                 <div class="ice">
@@ -181,7 +181,7 @@
           </section>
           <!--Почему именно мы, какие приемущества-->
           <section class="features">
-            <h2 class="visually_hidden">Почему именно мы?</h2>
+            <h3 class="visually_hidden">Почему именно мы?</h3>
             <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
             <div class="features_list">
               <h3 class="visually_hidden" aria-label="Мы используем">Cовременное оборудование</h3>
@@ -208,7 +208,7 @@
           </section>
           <!--Статья и рассылка-->
           <section class="promo">
-            <h2 class="visually_hidden">Наш блог</h2>
+            <h3 class="visually_hidden">Наш блог</h3>
             <article class="promo_item new_post">
               <p class="post_title">Новое в нашем блоге</p>
               <a class="post_text" href="#" aria-label="Перейты к статье">
@@ -216,7 +216,7 @@
               </a>
             </article>
             <section class="promo_item subscription">
-              <h2 class="visually_hidden">Подписаться на нашу рассылку</h2>
+              <h3 class="visually_hidden">Подписаться на нашу рассылку</h3>
               <div class="inner_mail">
                 <p>
                   Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
@@ -230,25 +230,22 @@
               </div>
             </section>
           </section>
+          </main>
         </div>
         <address class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5918027607663!2d30.325804709799385!3d59.938915332344045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
-          1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExO
-          DY!5e0!3m2!1sru!2sru!4v1572421672201!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-          <section class="feedback" aria-label="Адрес главного офиса: г. Санкт-Петербург, ул.Большая Конюшенная 19/8, Телефон для заказа 8 812 450-25-25, ежедневно с 10 до 20">
-            <h4>Адрес главного офиса<br> и офлайн - магазина:</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d254286.21056902118!2d30.173075328451407!3d60.13750525204408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1572871241911!5m2!1sru!2sru" width="100vw" height="430" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          <div class="feedback" aria-label="Адрес главного офиса: г. Санкт-Петербург, ул.Большая Конюшенная 19/8, Телефон для заказа 8 812 450-25-25, ежедневно с 10 до 20">
+            <p>Адрес главного офиса<br> и офлайн - магазина:</p>
             <b>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</b>
-            <h4>Для заказов по телефону:</h4>
+            <p>Для заказов по телефону:</p>
             <a class="tel"><b>8 812 450-25-25</b></a><br>
             <span>(с 10 до 20 ежедневно)</span>
             <a class="btn btn_feedback" href="" aria-label="Кнопка перехода к">Форма обратной связи</a>
-          </section>
+          </div>
         </address>
-      </main>
-      <footer class="main_footer">
-        <div class="container">
+      <footer class="main_footer container">
           <section class="social_links">
-            <h2 class="visually_hidden">Контактная информация</h2>
+            <h3 class="visually_hidden">Контактная информация</h3>
             <ul class="links_list">
               <li><a class="social_btn btn_tw" href="#" aria-label="Глейси в"><span class="visually_hidden">Twitter</span></a></li>
               <li><a class="social_btn btn_in" href="#" aria-label="Глейси в"><span class="visually_hidden">Instagram</span></a></li>
@@ -257,7 +254,7 @@
             </ul>
           </section>
           <section class="info">
-            <h2 class="visually_hidden">О нас</h2>
+            <h3 class="visually_hidden">О нас</h3>
             <ul class="info_item">
               <li class="heart"><a class="main_item" href="#" aria-label="Информация">Для поставщиков</a></li>
               <li><a href="#" aria-label="Для проверки качества и сертификатов посмотрите">Наши документы</a></li>
@@ -266,14 +263,13 @@
             </ul>
           </section>
           <section class="copyright">
+            <h3 class="visually_hidden">Копирайт</h3>
             <a href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/icons/logo-html.svg" width="108" height="39" alt="HTML Academy">
             </a><br>
             Сделано в <a class="copyright_link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019
           </section>
-        </div>
       </footer>
-    </div>
     <div class="popup_overlay"></div>
     <section class="modal modal_feedback" aria-label="Открылась форма обратной связи">
       <h3>Мы обязательно вам ответим!</h3>
@@ -283,11 +279,12 @@
         <label class="visually_hidden" for="user-email">Ваша почта для ответа?</label>
         <input id="user-email" type="email" name="email" placeholder="email@example.com" aria-label="Введите вашу электроную почту">
         <label class="visually_hidden" for="user-message">Напишите что-нибудь</label>
-        <textarea id="user_message" name="popup-message" rows="5" cols="100" placeholder="В свободной форме" aria-label="Введите дополнительный коментарий в свободной форме"></textarea>
+        <textarea id="user-message" name="popup-message" rows="5" cols="100" placeholder="В свободной форме" aria-label="Введите дополнительный коментарий в свободной форме"></textarea>
         <button class="btn popup_btn" type="submit">Отправить</button>
       </form>
       <button class="modal_close" type="button" title="Закрыть">Закрыть</button>
     </section>
     <script src="js/popup.js"></script>
+    </div>
   </body>
 </html>

@@ -9,10 +9,9 @@
     <title>Каталог мороженого</title>
   </head>
   <body class="light">
-    <!--Главное меню и лого-->
-    <div class="wrapper">
+     <!--Главное меню и лого-->
+      <div class="container">
       <header class="main_header">
-        <div class="container">
           <nav class="nav">
             <div class="logo">
               <a href="index.html">
@@ -42,6 +41,7 @@
                 <li class="menu_item">
                   <a class="search user_btn" href="#" aria-label="Строка поиска"></a>
                   <section class="search_form">
+                      <h3 class="visually_hidden">Строка поиска</h3>
                     <form action="https://echo.htmlacademy.ru/" method="get">
                       <label class="visually_hidden" for="navigation-search">Поиск</label>
                       <input id="navigation-search" type="search" name="search" placeholder="Что ищем?" aria-label="Строка поиска, введите что ищете."><!--Думаю тут можно инпут вложить в лейбл без привязки через id, но это не точно)-->
@@ -51,6 +51,7 @@
                 <li class="menu_item">
                   <a class="login user_btn" href="#">Вход</a>
                   <section class="login_form">
+                      <h3 class="visually_hidden">Форма входа</h3>
                     <form action="https://echo.htmlacademy.ru/" method="post">
                       <label class="visually_hidden" for="login-email">Логин</label>
                       <input id="login-email" type="text" name="login" placeholder="user@example.com" aria-label="Введите ваш логин" required>
@@ -69,6 +70,7 @@
                 <li class="menu_item">
                   <a class="basket_full user_btn" href="#" aria-label="В корзине">2 товара</a>
                   <section class="basket_form">
+                      <h3 class="visually_hidden">Корзина</h3>
                     <div class="position">
                       <ul class="position_item">
                         <li><a class="del" href="#" aria-label="Удалить позицию"></a></li>
@@ -98,34 +100,41 @@
               </div>
             </div>
           </nav>
-        </div>
       </header>
       <!--Основной контент-->
       <main class="main_content">
-        <div class="container">
-            <ul class="catalog_pass">
-              <li><a href="index.html">Главная</a></li>
-              <li><a href="#">Каталог</a></li>
-              <li>Сливочное</li>
-            </ul>
-          <h1 class="catalog_title">Сливочное мороженое</h1>
-          <section class="filters">
-            <h2 class="visually_hidden">Фильтр для товара</h2>
-            <form class="filters_form" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="filter_category">
-                <legend>Сортировка:</legend>
-                <select class="filter_sort" name="sort">
-                  <option value="popular">по популярности</option>
-                  <option value="cheap">сначала недорогие</option>
-                  <option value="expensive">сначала дорогие</option>
-                  <option value="fatness">по жирности</option>
-                </select>
-              </fieldset>
-              <fieldset class="filter_category">
-                <legend>Цена: 100 руб. – 500 руб.</legend>
-                <div class="feature_wrapper">
-                  <input type="range" name="price-range" min="100" max="500" step="10" value="140">
-                  <input class="second_range" type="range" name="price-range" min="100" max="500" step="10" value="500">
+        <ul class="catalog_pass">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li>Сливочное</li>
+        </ul>
+        <h1 class="catalog_title">Сливочное мороженое</h1>
+        <section class="filters">
+          <h3 class="visually_hidden">Фильтр для товара</h3>
+          <form class="filters_form" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="filter_category">
+            <legend>Сортировка:</legend>
+            <select class="filter_sort" name="sort">
+              <option value="popular">по популярности</option>
+              <option value="cheap">сначала недорогие</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="fatness">по жирности</option>
+            </select>
+            </fieldset>
+            <fieldset class="filter_category">
+              <legend>Цена:</legend>
+                <div class="range_filter">
+                  <div class="price_control">
+                    <label class="min_price"><input name="min-price" type="text" value="100">руб. </label>
+                    <label class="max_price"> – <input name="max-price" type="text" value="500">руб.</label>
+                  </div>
+                  <div class="range_control">
+                    <div class="scale">
+                      <div class="bar" style="margin-left: 15%; width: 50%"></div>
+                    </div>
+                    <div class="range_toggle toggle_min"></div>
+                    <div class="range_toggle toggle_max"></div>
+                  </div>
                 </div>
               </fieldset>
               <fieldset class="filter_category">
@@ -160,7 +169,7 @@
             </form>
           </section>
           <section class="index_hit">
-            <h2 class="visually_hidden">Галерея товаров</h2>
+            <h3 class="visually_hidden">Галерея товаров</h3>
             <article class="hit_item">
               <div class="wrapper_ice">
                 <div class="ice">
@@ -327,12 +336,10 @@
                 <li><a href="#" aria-label="Страница №">5</a></li>
                 <li><a class="pag_next" href="#" aria-label="На следующую страницу"></a></li>
               </ul>
-        </div>
       </main>
       <footer class="main_footer">
-        <div class="container">
           <section class="social_links">
-            <h2 class="visually_hidden">Контактная информация</h2>
+            <h3 class="visually_hidden">Контактная информация</h3>
             <ul class="links_list">
               <li><a class="social_btn btn_tw" href="#" aria-label="Глейси в"><span class="visually_hidden">Twitter</span></a></li>
               <li><a class="social_btn btn_in" href="#" aria-label="Глейси в"><span class="visually_hidden">Instagram</span></a></li>
@@ -341,7 +348,7 @@
             </ul>
           </section>
           <section class="info">
-            <h2 class="visually_hidden">О нас</h2>
+            <h3 class="visually_hidden">О нас</h3>
             <ul class="info_item info_left">
               <li><a class="heart" href="#" aria-label="Информация">Для поставщиков</a></li>
               <li><a href="#" aria-label="Для проверки качества и сертификатов посмотрите">Наши документы</a></li>
@@ -350,13 +357,13 @@
             </ul>
           </section>
           <section class="copyright">
+            <h3 class="visually_hidden">Копирайт</h3>
             <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на сайт HTML Academy">
             <img src="img/icons/logo-html.svg" width="108" height="39" alt="HTML Academy">
             </a><br>
             Сделано в <a class="copyright_link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на сайт HTML Academy">HTML Academy</a> &copy; 2019
           </section>
-        </div>
       </footer>
-    </div>
+      </div>
   </body>
 </html>
