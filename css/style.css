@@ -111,6 +111,7 @@ a {
   font-size: 0;
   list-style: none;
   height: 35px;
+  align-items: baseline;
 }
 .nav_item:first-child {
   padding-bottom: 8px;
