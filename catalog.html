@@ -5,7 +5,7 @@
     <meta name="format-detection" content="telephone=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Каталог мороженого</title>
   </head>
   <body class="light">
@@ -44,7 +44,7 @@
                   <h3 class="visually_hidden">Строка поиска</h3>
                   <form action="https://echo.htmlacademy.ru/" method="get">
                     <label class="visually_hidden" for="navigation-search">Поиск</label>
-                    <input id="navigation-search" type="search" name="search" placeholder="Что ищем?" aria-label="Строка поиска, введите что ищете."><!--Думаю тут можно инпут вложить в лейбл без привязки через id, но это не точно)-->
+                    <input class="search_input" id="navigation-search" type="search" name="search" placeholder="Что ищем?" aria-label="Строка поиска, введите что ищете."><!--Думаю тут можно инпут вложить в лейбл без привязки через id, но это не точно)-->
                   </form>
                 </section>
               </li>
@@ -54,9 +54,9 @@
                   <h3 class="visually_hidden">Форма входа</h3>
                   <form action="https://echo.htmlacademy.ru/" method="post">
                     <label class="visually_hidden" for="login-email">Логин</label>
-                    <input id="login-email" type="text" name="login" placeholder="user@example.com" aria-label="Введите ваш логин" required>
+                    <input class="login_input" id="login-email" type="text" name="login" placeholder="user@example.com" aria-label="Введите ваш логин" required>
                     <label class="visually_hidden" for="login-password">Пароль</label>
-                    <input id="login-password" type="password" name="password" placeholder="**********" aria-label="Введите ваш пароль" required>
+                    <input class="login_input" id="login-password" type="password" name="password" placeholder="**********" aria-label="Введите ваш пароль" required>
                     <div class="login_links">
                       <button class="btn btn_sign" type="submit" name="login" aria-label="Войти">Войти</button>
                       <p>

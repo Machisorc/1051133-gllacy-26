@@ -5,13 +5,13 @@
     <meta name="format-detection" content="telephone=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Интернет магазин мороженого «GllacyShop»</title>
   </head>
   <body>
-    <input class="visually_hidden" type="radio" id="btn-1" name="toggle" checked>
-    <input class="visually_hidden" type="radio" id="btn-2" name="toggle">
-    <input class="visually_hidden" type="radio" id="btn-3" name="toggle">
+    <input class="visually_hidden radio_hidden" type="radio" id="btn-1" name="toggle" checked>
+    <input class="visually_hidden radio_hidden" type="radio" id="btn-2" name="toggle">
+    <input class="visually_hidden radio_hidden" type="radio" id="btn-3" name="toggle">
     <div class="wrapper">
       <div class="container">
         <!--Главное меню и лого-->
@@ -46,7 +46,7 @@
                     <h3 class="visually_hidden">Строка поиска</h3>
                     <form action="https://echo.htmlacademy.ru/" method="get">
                       <label class="visually_hidden" for="navigation-search">Поиск</label>
-                      <input id="navigation-search" type="search" name="search" placeholder="Что ищем?" aria-label="Строка поиска, введите что ищете."><!--Думаю тут можно инпут вложить в лейбл без привязки через id, но это не точно)-->
+                      <input class="search_input" id="navigation-search" type="search" name="search" placeholder="Что ищем?" aria-label="Строка поиска, введите что ищете."><!--Думаю тут можно инпут вложить в лейбл без привязки через id, но это не точно)-->
                     </form>
                   </section>
                 </li>
@@ -56,9 +56,9 @@
                     <h3 class="visually_hidden">Форма входа</h3>
                     <form action="https://echo.htmlacademy.ru/" method="post">
                       <label class="visually_hidden" for="login-email">Логин</label>
-                      <input id="login-email" type="text" name="login" placeholder="user@example.com" aria-label="Введите ваш логин" required>
+                      <input class="login_input" id="login-email" type="text" name="login" placeholder="user@example.com" aria-label="Введите ваш логин" required>
                       <label class="visually_hidden" for="login-password">Пароль</label>
-                      <input id="login-password" type="password" name="password" placeholder="**********" aria-label="Введите ваш пароль" required>
+                      <input class="login_input" id="login-password" type="password" name="password" placeholder="**********" aria-label="Введите ваш пароль" required>
                       <div class="login_links">
                         <button class="btn btn_sign" type="submit" name="login" aria-label="Войти">Войти</button>
                         <p>
@@ -283,17 +283,17 @@
         <h3>Мы обязательно вам ответим!</h3>
         <form class="modal_form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually_hidden" for="user-name">Введите ваше имя и фамилию</label>
-          <input id="user-name" type="text" name="login" placeholder="Имя Фамилия">
+          <input class="popup_input" id="user-name" type="text" name="login" placeholder="Имя Фамилия">
           <label class="visually_hidden" for="user-email">Ваша почта для ответа?</label>
-          <input id="user-email" type="email" name="email" placeholder="email@example.com" aria-label="Введите вашу электроную почту">
+          <input class="popup_input" id="user-email" type="email" name="email" placeholder="email@example.com" aria-label="Введите вашу электроную почту">
           <label class="visually_hidden" for="user-message">Напишите что-нибудь</label>
-          <textarea id="user-message" name="popup-message" rows="5" cols="100" placeholder="В свободной форме" aria-label="Введите дополнительный коментарий в свободной форме"></textarea>
+          <textarea class="popup_textarea" id="user-message" name="popup-message" rows="5" cols="100" placeholder="В свободной форме" aria-label="Введите дополнительный коментарий в свободной форме"></textarea>
           <button class="btn popup_btn" type="submit">Отправить</button>
         </form>
         <button class="modal_close" type="button" title="Закрыть">Закрыть</button>
       </section>
-      <script src="js/popup.js"></script>
     </div>
-  </body>
+    <script src="js/popup.min.js"></script>
+   </body>
 </html>
 

@@ -23,30 +23,7 @@ body {
   overflow: hidden;
 }
 
-input,
-textarea {
-  padding: 9px 12px;
-  border-radius: 5px;
-  border: 1px solid #d3d3d3;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  outline: none;
-}
-
-input:hover,
-textarea:hover {
-  padding: 8px 11px;
-  border: 2px solid #d3d3d3;
-}
-
-input:focus,
-textarea:focus {
-  padding: 8px 11px;
-  border: 2px solid #5b9ddf;
-}
-
-body>input[type="radio"] {
+.radio_hidden {
   display: none;
 }
 
@@ -70,6 +47,7 @@ a {
   font-weight: 700;
   line-height: 24px;
   display: inline-block;
+  vertical-align: top;
   color: #fff;
   border: none;
   border-radius: 25px;
@@ -547,6 +525,7 @@ a {
   border: 2px solid #fff;
   border-radius: 50%;
   cursor: pointer;
+  vertical-align: top;
 }
 
 .toggle label:hover {
@@ -620,14 +599,14 @@ a {
 
 .promo_left {
   width: 560px;
-  background: url(../img/bg/malinka-bg.jpg) no-repeat;
+  background: #560002 url(../img/bg/malinka-bg.jpg) no-repeat;
   background-size: cover;
   margin-right: auto;
 }
 
 .promo_right {
   width: 560px;
-  background: url(../img/bg/choco-bg.jpg) no-repeat;
+  background: #785645 url(../img/bg/choco-bg.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -903,6 +882,26 @@ a {
 }
 
 .subscription_email {
+  padding: 9px 12px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  outline: none;
+}
+
+.subscription_email:hover {
+  padding: 8px 11px;
+  border: 2px solid #d3d3d3;
+}
+
+.subscription_email:focus {
+  padding: 8px 11px;
+  border: 2px solid #5b9ddf;
+}
+
+.subscription_email {
   display: block;
   box-sizing: border-box;
   min-width: 365px;
@@ -1047,6 +1046,7 @@ a {
   background-repeat: no-repeat;
   opacity: 0.8;
   box-sizing: border-box;
+  vertical-align: top;
 }
 
 .btn_tw {
@@ -1282,6 +1282,27 @@ li.pag_activ {
   border-radius: 5px;
   background-color: #f8f7f4;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.login_input,
+.search_input {
+  padding: 9px 12px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  outline: none;
+}
+.login_input:hover,
+.search_input:hover {
+  padding: 8px 11px;
+  border: 2px solid #d3d3d3;
+}
+.login_input:focus,
+.search_input:focus {
+  padding: 8px 11px;
+  border: 2px solid #5b9ddf;
 }
 
 .paginator a {
@@ -1542,7 +1563,7 @@ li.calc span {
 
 .range_control {
   position: relative;
-  height: 20px;
+  height: 21px;
   margin-bottom: 15px;
   padding-top: 15px;
   padding-right: 20px;
@@ -1800,6 +1821,28 @@ li.calc span {
   margin-left: 0;
   margin-top: 20px;
   line-height: 24px;
+}
+
+.popup_input,
+.popup_textarea {
+  padding: 9px 12px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  outline: none;
+}
+
+.popup_input:hover,
+.popup_textarea:hover {
+  padding: 8px 11px;
+  border: 2px solid #d3d3d3;
+}
+.popup_input:focus,
+.popup_textarea:focus {
+  padding: 8px 11px;
+  border: 2px solid #5b9ddf;
 }
 
 .modal_feedback textarea {
