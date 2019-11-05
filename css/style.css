@@ -622,6 +622,7 @@ a {
   width: 560px;
   background: url(../img/bg/malinka-bg.jpg) no-repeat;
   background-size: cover;
+  margin-right: auto;
 }
 
 .promo_right {
@@ -836,6 +837,7 @@ a {
   padding-top: 22px;
   background: #fff url(../img/bg/klubnika-bg.jpg) no-repeat;
   background-position: -27px -223px;
+  margin-right: auto;
 }
 
 .post_title {
